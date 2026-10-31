@@ -1,0 +1,29 @@
+:root{--bg:#0e1013;--s:#181b21;--s2:#232732;--tx:#eceef3;--mu:#8b92a3;--ac:#3b82f6;--ok:#22c55e;--bd:#2a2f3a;--bad:#ef4444}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--tx);font:16px/1.4 -apple-system,system-ui,Roboto,sans-serif;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top)}
+main{flex:1;overflow:auto;padding:16px}
+nav{display:flex;background:var(--s);border-top:1px solid var(--bd);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;background:none;border:0;color:var(--mu);padding:14px 0;font:inherit;font-size:13px}
+nav button.on{color:var(--ac);font-weight:600}
+h1{font-size:26px;margin-bottom:14px}
+h2{font-size:17px;margin:18px 0 8px}
+.card{background:var(--s);border-radius:12px;padding:14px;margin-bottom:12px}
+.mu{color:var(--mu);font-size:14px}
+.btn{display:block;width:100%;background:var(--ac);color:#fff;border:0;border-radius:10px;padding:13px;font:inherit;font-weight:600;margin-top:10px}
+.btn.g{background:var(--s2);color:var(--tx)}.btn.r{background:none;color:var(--bad)}
+.row{display:flex;gap:8px;align-items:center}
+.sp{justify-content:space-between}
+.set{display:grid;grid-template-columns:34px 1fr 1fr 44px;gap:8px;align-items:center;margin-top:8px}
+.set.h{color:var(--mu);font-size:13px;margin-top:10px}
+.set.d input{background:#12301f}
+input[type=text],input[type=number],input[type=search]{width:100%;background:var(--s2);border:1px solid transparent;border-radius:8px;color:var(--tx);padding:9px;font:inherit;text-align:center}
+input[type=search]{text-align:left;margin-bottom:10px}
+input:focus-visible,button:focus-visible{outline:2px solid var(--ac)}
+.ck{background:var(--s2);border:0;border-radius:8px;color:var(--mu);height:38px;font-size:18px}
+.set.d .ck{background:var(--ok);color:#fff}
+.it{display:flex;justify-content:space-between;align-items:center;width:100%;background:var(--s);border:0;border-radius:10px;color:var(--tx);padding:12px 14px;margin-bottom:8px;font:inherit;text-align:left}
+.up{color:var(--ok)}.dn{color:var(--bad)}
+.seg{display:flex;background:var(--s2);border-radius:10px;padding:3px}
+.seg button{flex:1;border:0;background:none;color:var(--mu);padding:9px;border-radius:8px;font:inherit}
+.seg button.on{background:var(--ac);color:#fff}
